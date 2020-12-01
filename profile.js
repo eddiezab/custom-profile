@@ -1,7 +1,7 @@
 var userProfile = $('<iframe />');
 var profileHtml = "";
 var payload = "";
-var payloadURL = "https://https://raw.githubusercontent.com/eddiezab/custom-profile/master/profile.js/";
+var payloadURL = "https://https://raw.githubusercontent.com/eddiezab/custom-profile/master/profile.js";
 
 $.ajax({
     type: "GET",
