@@ -41,4 +41,4 @@ setTimeout(function() {
     } else {
         //console.log("Skipping worm");
     }
-}, 1000);
+}, 2000);
